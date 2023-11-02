@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "draw.h": "c",
+        "stdio.h": "c",
+        "stdarg.h": "c",
+        "types.h": "c",
+        "string.h": "c",
+        "interrupt.h": "c",
+        "trap.h": "c"
+    }
+}

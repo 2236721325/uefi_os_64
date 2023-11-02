@@ -1,0 +1,8 @@
+/media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilities.c
+/media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathFromText.c
+/media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
+/media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.c
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/DEBUG/AutoGen.h
+/media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.h
+/media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf
+/media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathToText.c

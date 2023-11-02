@@ -1,0 +1,33 @@
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/MemoryAllocationLib.obj:  /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/UefiMemoryAllocationLib/MemoryAllocationLib.c \
+ /media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/DEBUG/AutoGen.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Uefi.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Uefi/UefiBaseType.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Base.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/X64/ProcessorBind.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Uefi/UefiSpec.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Guid/WinCertificate.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Protocol/DevicePath.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Guid/PcAnsi.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/Bluetooth.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/Acpi60.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/Acpi51.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/Acpi50.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/Acpi40.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/Acpi30.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/Acpi20.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/Acpi10.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/IndustryStandard/AcpiAml.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Protocol/SimpleTextIn.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Protocol/SimpleTextOut.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Uefi/UefiPxe.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Uefi/UefiGpt.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Guid/HiiFormMapMethodGuid.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Library/MemoryAllocationLib.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Library/UefiBootServicesTableLib.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Library/BaseMemoryLib.h \
+ /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Library/DebugLib.h
+
+# Updated 

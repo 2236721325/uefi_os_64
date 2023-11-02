@@ -1,0 +1,16 @@
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/SetMem.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/ScanMem64Wrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/ScanMem32Wrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/ScanMem16Wrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/ScanMem8Wrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/ZeroMemWrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/CompareMemWrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/SetMem64Wrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/SetMem32Wrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/SetMem16Wrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/SetMemWrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/CopyMemWrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/IsZeroBufferWrapper.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/MemLibGeneric.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/MemLibGuid.obj
+/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/CopyMem.obj

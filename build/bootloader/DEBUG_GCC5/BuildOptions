@@ -1,0 +1,3 @@
+gCommandLineDefines: {'ARCH': 'X64'}
+BuildOptionPcd: []
+Active Platform: /media/wyh/KESU/Coding/build_os/edk2/edk2/BootLoaderPkg/BootLoaderPkg.dsc
