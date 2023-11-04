@@ -6,6 +6,14 @@
         "types.h": "c",
         "string.h": "c",
         "interrupt.h": "c",
-        "trap.h": "c"
+        "trap.h": "c",
+        "gate.h": "c",
+        "tss.h": "c",
+        "mouse.h": "c",
+        "efi_info.h": "c",
+        "exception.h": "c",
+        "io.h": "c",
+        "global.h": "c",
+        "system_error": "c"
     }
 }

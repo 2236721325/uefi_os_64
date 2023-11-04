@@ -34,8 +34,16 @@ $(BUILD)/kernel/system.o: $(BUILD)/kernel/kernel.o \
 						  $(BUILD)/device/mouse.o \
 						  $(BUILD)/kernel/head.o \
 						  $(BUILD)/kernel/interrupt.o \
-						  $(BUILD)/kernel/trap.o \
-						  $(BUILD)/kernel/entry.o
+						  $(BUILD)/kernel/interrupt_entry.o \
+						  $(BUILD)/kernel/tss.o \
+						  $(BUILD)/kernel/init.o \
+						  $(BUILD)/kernel/exception.o \
+						  $(BUILD)/device/keyboard.o \
+						  $(BUILD)/device/8259A.o \
+
+
+
+
 
 
 

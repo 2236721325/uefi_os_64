@@ -137,7 +137,6 @@ void init_draw()
 {
     g_graphicInfo=&g_bootInfo.graphicInfo;
     clear_screen((Color){100,100,100,0});
-
 }
 void draw_test()
 {

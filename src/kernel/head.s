@@ -1,6 +1,6 @@
 .section .text
 
-.global _start; _start:
+.global _start
 
 _start:
 	mov	%ss,	%ax
@@ -52,26 +52,26 @@ entry64:
 	movq	%rax,	%ss
 	movq	$0xffff800000007E00,	%rsp		/* rsp address */
 
-setup_IDT:							
-	leaq	ignore_int(%rip),	%rdx
-	movq	$(0x08 << 16),	%rax
-	movw	%dx,	%ax
-	movq	$(0x8E00 << 32),	%rcx		
-	addq	%rcx,	%rax
-
-	movl	%edx,	%ecx
-	shrl	$16,	%ecx
-	shlq	$48,	%rcx
-	addq	%rcx,	%rax
-	shrq	$32,	%rdx
-	leaq	IDT_Table(%rip),	%rdi
-	mov	$256,	%rcx
-rp_sidt:
-	movq	%rax,	(%rdi)
-	movq	%rdx,	8(%rdi)
-	addq	$0x10,	%rdi
-	dec	%rcx
-	jne	rp_sidt
+//setup_IDT:							
+//	leaq	ignore_int(%rip),	%rdx
+//	movq	$(0x08 << 16),	%rax
+//	movw	%dx,	%ax
+//	movq	$(0x8E00 << 32),	%rcx		
+//	addq	%rcx,	%rax
+//
+//	movl	%edx,	%ecx
+//	shrl	$16,	%ecx
+//	shlq	$48,	%rcx
+//	addq	%rcx,	%rax
+//	shrq	$32,	%rdx
+//	leaq	IDT_Table(%rip),	%rdi
+//	mov	$256,	%rcx
+//rp_sidt:
+//	movq	%rax,	(%rdi)
+//	movq	%rdx,	8(%rdi)
+//	addq	$0x10,	%rdi
+//	dec	%rcx
+//	jne	rp_sidt
 
 
 setup_TSS64:
@@ -111,37 +111,36 @@ go_to_kernel:
 
 
 //=======	ignore_int
-
-.extern interrupt_handle
-
-ignore_int:
-	cld
-	pushq	%rax
-	pushq	%rbx
-	pushq	%rcx
-	pushq	%rdx
-	pushq	%rbp
-	pushq	%rdi
-	pushq	%rsi
-
-	pushq	%r8
-	pushq	%r9
-	pushq	%r10
-	pushq	%r11
-	pushq	%r12
-	pushq	%r13
-	pushq	%r14
-	pushq	%r15
-
-	movq	%es,	%rax
-	pushq	%rax
-	movq	%ds,	%rax
-	pushq	%rax
-
-	movq	$0x10,	%rax
-	movq	%rax,	%ds
-	movq	%rax,	%es
-
+//
+//; .extern interrupt_handle
+//
+//; ignore_int:
+//; 	cld
+//; 	pushq	%rax
+//; 	pushq	%rbx
+//; 	pushq	%rcx
+//; 	pushq	%rdx
+//; 	pushq	%rbp
+//; 	pushq	%rdi
+//; 	pushq	%rsi
+//
+//; 	pushq	%r8
+//; 	pushq	%r9
+//; 	pushq	%r10
+//; 	pushq	%r11
+//; 	pushq	%r12
+//; 	pushq	%r13
+//; 	pushq	%r14
+//; 	pushq	%r15
+//
+//; 	movq	%es,	%rax
+//; 	pushq	%rax
+//; 	movq	%ds,	%rax
+//; 	pushq	%rax
+//
+//; 	movq	$0x10,	%rax
+//; 	movq	%rax,	%ds
+//; 	movq	%rax,	%es
 //  ; leaq	int_msg(%rip),	%rax			/* leaq get address */
 //  ; pushq	%rax
 //  ; movq	%rax,	%rdx
@@ -150,39 +149,36 @@ ignore_int:
 //  ; movq	$0,	%rax
 //  ; callq	color_printk
 //  ; addq	$0x8,	%rsp
-	callq interrupt_handle
+//// 	callq interrupt_handle
 
-
-
-Loop:
-	jmp	Loop	
-
-	popq	%rax
-	movq	%rax,	%ds
-	popq	%rax
-	movq	%rax,	%es
-
-	popq	%r15
-	popq	%r14
-	popq	%r13
-	popq	%r12
-	popq	%r11
-	popq	%r10
-	popq	%r9
-	popq	%r8
-
-	popq	%rsi
-	popq	%rdi
-	popq	%rbp
-	popq	%rdx
-	popq	%rcx
-	popq	%rbx
-	popq	%rax
-	iretq
-
-int_msg:
-	.asciz "Unknown interrupt or fault at RIP\n"
-
+//Loop:
+//	jmp	Loop	
+//
+//	popq	%rax
+//	movq	%rax,	%ds
+//	popq	%rax
+//	movq	%rax,	%es
+//
+//	popq	%r15
+//	popq	%r14
+//	popq	%r13
+//	popq	%r12
+//	popq	%r11
+//	popq	%r10
+//	popq	%r9
+//	popq	%r8
+//
+//	popq	%rsi
+//	popq	%rdi
+//	popq	%rbp
+//	popq	%rdx
+//	popq	%rcx
+//	popq	%rbx
+//	popq	%rax
+//	iretq
+//
+//int_msg:
+//	.asciz "Unknown interrupt or fault at RIP\n"
 
 
 

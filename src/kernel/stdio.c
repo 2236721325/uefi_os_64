@@ -14,9 +14,9 @@ void memsetl(void* dst_, uint64_t value, uint32_t size)
 // #define va_end(ap) ap = NULL		               	// 清除ap
 
 /* 将整型转换成字符(integer to ascii) */
-static void itoa(uint32_t value, char** buf_ptr_addr, uint8_t base) {
-   	uint32_t m = value % base;	                  	// 求模,最先掉下来的是最低位   
-   	uint32_t i = value / base;	                  	// 取整
+static void itoa(uint64_t value, char** buf_ptr_addr, uint8_t base) {
+   	uint64_t m = value % base;	                  	// 求模,最先掉下来的是最低位   
+   	uint64_t i = value / base;	                  	// 取整
    	if (i) {			                            // 如果倍数不为0则递归调用。
       	itoa(i, buf_ptr_addr, base);
    	}
@@ -28,12 +28,15 @@ static void itoa(uint32_t value, char** buf_ptr_addr, uint8_t base) {
    	}
 }
 
+
+
+
 /* 将参数ap按照格式format输出到字符串str,并返回替换后str长度 */
 uint32_t vsprintf(char* str, const char* format, va_list ap) {
 	char* buf_ptr = str;
 	const char* index_ptr = format;
 	char index_char = *index_ptr;
-	int32_t arg_int;
+	int64_t arg_int;
 	char* arg_str;
 	while(index_char) {
 		if (index_char != '%') {
@@ -62,8 +65,22 @@ uint32_t vsprintf(char* str, const char* format, va_list ap) {
 	    	itoa(arg_int, &buf_ptr, 10); 
 	    	index_char = *(++index_ptr);
 	    	break;
+		case 'D':
+	    	arg_int = va_arg(ap, int64_t);
+	    	if (arg_int < 0) {
+	       		arg_int = 0 - arg_int;	/* 若是负数, 将其转为正数后,再正数前面输出个负号'-'. */
+	       		*buf_ptr++ = '-';
+	    	}
+	    	itoa(arg_int, &buf_ptr, 10); 
+	    	index_char = *(++index_ptr);
+	    	break;
 		case 'x':
 			arg_int = va_arg(ap, int);
+			itoa(arg_int, &buf_ptr, 16); 	
+			index_char = *(++index_ptr); 			// 跳过格式字符并更新index_char
+			break;
+		case 'X':
+			arg_int = va_arg(ap, int64_t);
 			itoa(arg_int, &buf_ptr, 16); 	
 			index_char = *(++index_ptr); 			// 跳过格式字符并更新index_char
 			break;

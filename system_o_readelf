@@ -8,16 +8,16 @@ ELF 头：
   类型:                              EXEC (可执行文件)
   系统架构:                          Advanced Micro Devices X86-64
   版本:                              0x1
-  入口点地址：               0xffff800000105550
+  入口点地址：               0xffff800000105620
   程序头起点：          64 (bytes into file)
-  Start of section headers:          98440 (bytes into file)
+  Start of section headers:          91432 (bytes into file)
   标志：             0x0
   Size of this header:               64 (bytes)
   Size of program headers:           56 (bytes)
   Number of program headers:         2
   Size of section headers:           64 (bytes)
-  Number of section headers:         18
-  Section header string table index: 17
+  Number of section headers:         19
+  Section header string table index: 18
 
 节头：
   [号] 名称              类型             地址              偏移量
@@ -25,39 +25,41 @@ ELF 头：
   [ 0]                   NULL             0000000000000000  00000000
        0000000000000000  0000000000000000           0     0     0
   [ 1] .text             PROGBITS         ffff800000100000  00001000
-       000000000000c16f  0000000000000000  AX       0     0     8
-  [ 2] .data             PROGBITS         ffff80000010c180  0000d180
-       000000000000331c  0000000000000000  WA       0     0     32
-  [ 3] .got              PROGBITS         ffff80000010f4a0  000104a0
-       00000000000000b8  0000000000000000  WA       0     0     8
-  [ 4] .got.plt          PROGBITS         ffff80000010f558  00010558
+       000000000000aec0  0000000000000000  AX       0     0     8
+  [ 2] .data             PROGBITS         ffff80000010aec0  0000bec0
+       000000000000349c  0000000000000000  WA       0     0     32
+  [ 3] .got              PROGBITS         ffff80000010e360  0000f360
+       0000000000000028  0000000000000000  WA       0     0     8
+  [ 4] .got.plt          PROGBITS         ffff80000010e388  0000f388
        0000000000000018  0000000000000008  WA       0     0     8
-  [ 5] .rodata           PROGBITS         ffff80000010f570  00010570
-       000000000000062d  0000000000000000   A       0     0     8
-  [ 6] .eh_frame         PROGBITS         ffff80000010fba0  00010ba0
-       0000000000000728  0000000000000000   A       0     0     8
-  [ 7] .bss              NOBITS           ffff8000001102e0  000112c8
-       0000000000002080  0000000000000000  WA       0     0     32
-  [ 8] .debug_info       PROGBITS         0000000000000000  000112c8
-       0000000000002b09  0000000000000000           0     0     1
-  [ 9] .debug_abbrev     PROGBITS         0000000000000000  00013dd1
-       0000000000000ade  0000000000000000           0     0     1
-  [10] .debug_aranges    PROGBITS         0000000000000000  000148b0
-       0000000000000210  0000000000000000           0     0     16
-  [11] .debug_line       PROGBITS         0000000000000000  00014ac0
-       00000000000011a9  0000000000000000           0     0     1
-  [12] .debug_str        PROGBITS         0000000000000000  00015c69
-       00000000000006ea  0000000000000001  MS       0     0     1
-  [13] .debug_line_str   PROGBITS         0000000000000000  00016353
-       000000000000018f  0000000000000001  MS       0     0     1
-  [14] .comment          PROGBITS         0000000000000000  000164e2
+  [ 5] .data.rel.local   PROGBITS         ffff80000010e3a0  0000f3a0
+       00000000000000b0  0000000000000000  WA       0     0     32
+  [ 6] .rodata           PROGBITS         ffff80000010e450  0000f450
+       00000000000003f5  0000000000000000   A       0     0     8
+  [ 7] .eh_frame         PROGBITS         ffff80000010e848  0000f848
+       0000000000000634  0000000000000000   A       0     0     8
+  [ 8] .bss              NOBITS           ffff80000010ee80  0000fe7c
+       00000000000028a0  0000000000000000  WA       0     0     32
+  [ 9] .debug_info       PROGBITS         0000000000000000  0000fe7c
+       0000000000002425  0000000000000000           0     0     1
+  [10] .debug_abbrev     PROGBITS         0000000000000000  000122a1
+       0000000000000de9  0000000000000000           0     0     1
+  [11] .debug_aranges    PROGBITS         0000000000000000  00013090
+       00000000000002d0  0000000000000000           0     0     16
+  [12] .debug_line       PROGBITS         0000000000000000  00013360
+       0000000000000f80  0000000000000000           0     0     1
+  [13] .debug_str        PROGBITS         0000000000000000  000142e0
+       000000000000066f  0000000000000001  MS       0     0     1
+  [14] .debug_line_str   PROGBITS         0000000000000000  0001494f
+       0000000000000205  0000000000000001  MS       0     0     1
+  [15] .comment          PROGBITS         0000000000000000  00014b54
        000000000000002b  0000000000000001  MS       0     0     1
-  [15] .symtab           SYMTAB           0000000000000000  00016510
-       00000000000014a0  0000000000000018          16   127     8
-  [16] .strtab           STRTAB           0000000000000000  000179b0
-       0000000000000630  0000000000000000           0     0     1
-  [17] .shstrtab         STRTAB           0000000000000000  00017fe0
-       00000000000000a5  0000000000000000           0     0     1
+  [16] .symtab           SYMTAB           0000000000000000  00014b80
+       00000000000010b0  0000000000000018          17   114     8
+  [17] .strtab           STRTAB           0000000000000000  00015c30
+       0000000000000842  0000000000000000           0     0     1
+  [18] .shstrtab         STRTAB           0000000000000000  00016472
+       00000000000000b5  0000000000000000           0     0     1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),
@@ -70,13 +72,13 @@ There are no section groups in this file.
   Type           Offset             VirtAddr           PhysAddr
                  FileSiz            MemSiz              Flags  Align
   LOAD           0x0000000000001000 0xffff800000100000 0xffff800000100000
-                 0x00000000000102c8 0x0000000000012360  RWE    0x1000
+                 0x000000000000ee7c 0x0000000000011720  RWE    0x1000
   GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000
                  0x0000000000000000 0x0000000000000000  RWE    0x10
 
  Section to Segment mapping:
   段节...
-   00     .text .data .got .got.plt .rodata .eh_frame .bss 
+   00     .text .data .got .got.plt .data.rel.local .rodata .eh_frame .bss 
    01     
 
 There is no dynamic section in this file.
@@ -84,227 +86,185 @@ There is no dynamic section in this file.
 该文件中没有重定位信息。
 No processor specific unwind information to decode
 
-Symbol table '.symtab' contains 220 entries:
+Symbol table '.symtab' contains 178 entries:
    Num:    Value          Size Type    Bind   Vis      Ndx Name
      0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
      1: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS head.o
-     2: ffff80000010e416     0 NOTYPE  LOCAL  DEFAULT    2 GDT_POINTER
-     3: ffff80000010f420     0 NOTYPE  LOCAL  DEFAULT    2 IDT_POINTER
+     2: ffff80000010d2d6     0 NOTYPE  LOCAL  DEFAULT    2 GDT_POINTER
+     3: ffff80000010e2e0     0 NOTYPE  LOCAL  DEFAULT    2 IDT_POINTER
      4: ffff800000100053     0 NOTYPE  LOCAL  DEFAULT    1 switch_seg
      5: ffff80000010005b     0 NOTYPE  LOCAL  DEFAULT    1 entry64
-     6: ffff800000100078     0 NOTYPE  LOCAL  DEFAULT    1 setup_IDT
-     7: ffff80000010012c     0 NOTYPE  LOCAL  DEFAULT    1 ignore_int
-     8: ffff8000001000b4     0 NOTYPE  LOCAL  DEFAULT    1 rp_sidt
-     9: ffff8000001000c4     0 NOTYPE  LOCAL  DEFAULT    1 setup_TSS64
-    10: ffff800000100124     0 NOTYPE  LOCAL  DEFAULT    1 go_to_kernel
-    11: ffff80000010015e     0 NOTYPE  LOCAL  DEFAULT    1 Loop
-    12: ffff800000100181     0 NOTYPE  LOCAL  DEFAULT    1 int_msg
-    13: ffff800000101000     0 NOTYPE  LOCAL  DEFAULT    1 __PML4E
-    14: ffff800000102000     0 NOTYPE  LOCAL  DEFAULT    1 __PDPTE
-    15: ffff800000103000     0 NOTYPE  LOCAL  DEFAULT    1 __PDE
-    16: ffff80000010e416     0 NOTYPE  LOCAL  DEFAULT    2 GDT_END
-    17: ffff80000010e416     0 NOTYPE  LOCAL  DEFAULT    2 GDT_LIMIT
-    18: ffff80000010e418     0 NOTYPE  LOCAL  DEFAULT    2 GDT_BASE
-    19: ffff80000010f420     0 NOTYPE  LOCAL  DEFAULT    2 IDT_END
-    20: ffff80000010f420     0 NOTYPE  LOCAL  DEFAULT    2 IDT_LIMIT
-    21: ffff80000010f422     0 NOTYPE  LOCAL  DEFAULT    2 IDT_BASE
-    22: ffff80000010f492     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_END
-    23: ffff80000010f492     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_POINTER
-    24: ffff80000010f492     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_LIMIT
-    25: ffff80000010f494     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_BASE
-    26: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS kernel.c
-    27: ffff800000104047   279 FUNC    LOCAL  DEFAULT    1 init_all
-    28: ffff80000010415e    64 FUNC    LOCAL  DEFAULT    1 test_all
-    29: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS efi_info.c
-    30: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS draw.c
-    31: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS stdio.c
-    32: ffff800000104a6b   180 FUNC    LOCAL  DEFAULT    1 itoa
-    33: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS string.c
-    34: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS mouse.c
-    35: ffff80000010d180   256 OBJECT  LOCAL  DEFAULT    2 cursor.0
-    36: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS head.o
-    37: ffff80000010d308     0 NOTYPE  LOCAL  DEFAULT    2 GDT_POINTER
-    38: ffff80000010e312     0 NOTYPE  LOCAL  DEFAULT    2 IDT_POINTER
-    39: ffff8000001055a3     0 NOTYPE  LOCAL  DEFAULT    1 switch_seg
-    40: ffff8000001055ab     0 NOTYPE  LOCAL  DEFAULT    1 entry64
-    41: ffff8000001055c8     0 NOTYPE  LOCAL  DEFAULT    1 setup_IDT
-    42: ffff80000010567c     0 NOTYPE  LOCAL  DEFAULT    1 ignore_int
-    43: ffff800000105604     0 NOTYPE  LOCAL  DEFAULT    1 rp_sidt
-    44: ffff800000105614     0 NOTYPE  LOCAL  DEFAULT    1 setup_TSS64
-    45: ffff800000105674     0 NOTYPE  LOCAL  DEFAULT    1 go_to_kernel
-    46: ffff8000001056ae     0 NOTYPE  LOCAL  DEFAULT    1 Loop
-    47: ffff8000001056d1     0 NOTYPE  LOCAL  DEFAULT    1 int_msg
-    48: ffff800000106550     0 NOTYPE  LOCAL  DEFAULT    1 __PML4E
-    49: ffff800000107550     0 NOTYPE  LOCAL  DEFAULT    1 __PDPTE
-    50: ffff800000108550     0 NOTYPE  LOCAL  DEFAULT    1 __PDE
-    51: ffff80000010d308     0 NOTYPE  LOCAL  DEFAULT    2 GDT_END
-    52: ffff80000010d308     0 NOTYPE  LOCAL  DEFAULT    2 GDT_LIMIT
-    53: ffff80000010d30a     0 NOTYPE  LOCAL  DEFAULT    2 GDT_BASE
-    54: ffff80000010e312     0 NOTYPE  LOCAL  DEFAULT    2 IDT_END
-    55: ffff80000010e312     0 NOTYPE  LOCAL  DEFAULT    2 IDT_LIMIT
-    56: ffff80000010e314     0 NOTYPE  LOCAL  DEFAULT    2 IDT_BASE
-    57: ffff80000010e384     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_END
-    58: ffff80000010e384     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_POINTER
-    59: ffff80000010e384     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_LIMIT
-    60: ffff80000010e386     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_BASE
-    61: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS interrupt.c
-    62: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS trap.c
-    63: ffff80000010f570     0 NOTYPE  LOCAL  DEFAULT    5 .LC0
-    64: ffff80000010f5a0     0 NOTYPE  LOCAL  DEFAULT    5 .LC1
-    65: ffff80000010f5d0     0 NOTYPE  LOCAL  DEFAULT    5 .LC2
-    66: ffff80000010f5f8     0 NOTYPE  LOCAL  DEFAULT    5 .LC3
-    67: ffff80000010f620     0 NOTYPE  LOCAL  DEFAULT    5 .LC4
-    68: ffff80000010f650     0 NOTYPE  LOCAL  DEFAULT    5 .LC5
-    69: ffff80000010f680     0 NOTYPE  LOCAL  DEFAULT    5 .LC6
-    70: ffff80000010f6b8     0 NOTYPE  LOCAL  DEFAULT    5 .LC7
-    71: ffff80000010f6f0     0 NOTYPE  LOCAL  DEFAULT    5 .LC8
-    72: ffff80000010f720     0 NOTYPE  LOCAL  DEFAULT    5 .LC9
-    73: ffff80000010f760     0 NOTYPE  LOCAL  DEFAULT    5 .LC10
-    74: ffff80000010f790     0 NOTYPE  LOCAL  DEFAULT    5 .LC11
-    75: ffff80000010f810     0 NOTYPE  LOCAL  DEFAULT    5 .LC12
-    76: ffff80000010f840     0 NOTYPE  LOCAL  DEFAULT    5 .LC13
-    77: ffff80000010f878     0 NOTYPE  LOCAL  DEFAULT    5 .LC14
-    78: ffff80000010f8b0     0 NOTYPE  LOCAL  DEFAULT    5 .LC15
-    79: ffff80000010f8dc     0 NOTYPE  LOCAL  DEFAULT    5 .LC16
-    80: ffff80000010f8f8     0 NOTYPE  LOCAL  DEFAULT    5 .LC17
-    81: ffff80000010f930     0 NOTYPE  LOCAL  DEFAULT    5 .LC18
-    82: ffff80000010f968     0 NOTYPE  LOCAL  DEFAULT    5 .LC19
-    83: ffff80000010f9a0     0 NOTYPE  LOCAL  DEFAULT    5 .LC20
-    84: ffff80000010f9cf     0 NOTYPE  LOCAL  DEFAULT    5 .LC21
-    85: ffff80000010f9e2     0 NOTYPE  LOCAL  DEFAULT    5 .LC22
-    86: ffff80000010f9f6     0 NOTYPE  LOCAL  DEFAULT    5 .LC23
-    87: ffff80000010fa09     0 NOTYPE  LOCAL  DEFAULT    5 .LC24
-    88: ffff80000010fa1b     0 NOTYPE  LOCAL  DEFAULT    5 .LC25
-    89: ffff80000010fa37     0 NOTYPE  LOCAL  DEFAULT    5 .LC26
-    90: ffff80000010fa58     0 NOTYPE  LOCAL  DEFAULT    5 .LC27
-    91: ffff80000010fa77     0 NOTYPE  LOCAL  DEFAULT    5 .LC28
-    92: ffff80000010fa80     0 NOTYPE  LOCAL  DEFAULT    5 .LC29
-    93: ffff80000010fab8     0 NOTYPE  LOCAL  DEFAULT    5 .LC30
-    94: ffff80000010faf0     0 NOTYPE  LOCAL  DEFAULT    5 .LC31
-    95: ffff80000010fb28     0 NOTYPE  LOCAL  DEFAULT    5 .LC32
-    96: ffff80000010fb60     0 NOTYPE  LOCAL  DEFAULT    5 .LC33
-    97: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS entry.o
-    98: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  ABS R15
-    99: 0000000000000008     0 NOTYPE  LOCAL  DEFAULT  ABS R14
-   100: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT  ABS R13
-   101: 0000000000000018     0 NOTYPE  LOCAL  DEFAULT  ABS R12
-   102: 0000000000000020     0 NOTYPE  LOCAL  DEFAULT  ABS R11
-   103: 0000000000000028     0 NOTYPE  LOCAL  DEFAULT  ABS R10
-   104: 0000000000000030     0 NOTYPE  LOCAL  DEFAULT  ABS R9
-   105: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT  ABS R8
-   106: 0000000000000040     0 NOTYPE  LOCAL  DEFAULT  ABS RBX
-   107: 0000000000000048     0 NOTYPE  LOCAL  DEFAULT  ABS RCX
-   108: 0000000000000050     0 NOTYPE  LOCAL  DEFAULT  ABS RDX
-   109: 0000000000000058     0 NOTYPE  LOCAL  DEFAULT  ABS RSI
-   110: 0000000000000060     0 NOTYPE  LOCAL  DEFAULT  ABS RDI
-   111: 0000000000000068     0 NOTYPE  LOCAL  DEFAULT  ABS RBP
-   112: 0000000000000070     0 NOTYPE  LOCAL  DEFAULT  ABS DS
-   113: 0000000000000078     0 NOTYPE  LOCAL  DEFAULT  ABS ES
-   114: 0000000000000080     0 NOTYPE  LOCAL  DEFAULT  ABS RAX
-   115: 0000000000000088     0 NOTYPE  LOCAL  DEFAULT  ABS FUNC
-   116: 0000000000000090     0 NOTYPE  LOCAL  DEFAULT  ABS ERRCODE
-   117: 0000000000000098     0 NOTYPE  LOCAL  DEFAULT  ABS RIP
-   118: 00000000000000a0     0 NOTYPE  LOCAL  DEFAULT  ABS CS
-   119: 00000000000000a8     0 NOTYPE  LOCAL  DEFAULT  ABS RFLAGS
-   120: 00000000000000b0     0 NOTYPE  LOCAL  DEFAULT  ABS OLDRSP
-   121: 00000000000000b8     0 NOTYPE  LOCAL  DEFAULT  ABS OLDSS
-   122: ffff80000010bf68     0 NOTYPE  LOCAL  DEFAULT    1 RESTORE_ALL
-   123: ffff80000010bf8d     0 NOTYPE  LOCAL  DEFAULT    1 ret_from_exception
-   124: ffff80000010bf9d     0 NOTYPE  LOCAL  DEFAULT    1 error_code
-   125: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS 
-   126: ffff80000010f558     0 OBJECT  LOCAL  DEFAULT    4 _GLOBAL_OFFSET_TABLE_
-   127: ffff800000105043    87 FUNC    GLOBAL DEFAULT    1 strcpy
-   128: ffff800000110340  4096 OBJECT  GLOBAL DEFAULT    7 g_buffer
-   129: ffff8000001045ef   504 FUNC    GLOBAL DEFAULT    1 draw_font_ascii
-   130: ffff800000109cd7   169 FUNC    GLOBAL DEFAULT    1 do_double_fault
-   131: ffff800000104b1f   776 FUNC    GLOBAL DEFAULT    1 vsprintf
-   132: ffff800000109b85   169 FUNC    GLOBAL DEFAULT    1 do_undefined_opcode
-   133: ffff80000010bf8f     0 NOTYPE  GLOBAL DEFAULT    1 divide_error
-   134: ffff80000010a9fd   928 FUNC    GLOBAL DEFAULT    1 do_page_fault
-   135: ffff800000109adc   169 FUNC    GLOBAL DEFAULT    1 do_bounds
-   136: ffff80000010535b   495 FUNC    GLOBAL DEFAULT    1 draw_mouse
-   137: ffff80000010b0ea  3710 FUNC    GLOBAL DEFAULT    1 sys_trap_init
-   138: ffff800000105283    97 FUNC    GLOBAL DEFAULT    1 strchrs
-   139: ffff800000109e29   757 FUNC    GLOBAL DEFAULT    1 do_invalid_TSS
-   140: ffff80000010c16f     0 NOTYPE  GLOBAL DEFAULT    1 _etext
-   141: ffff80000010aeef   169 FUNC    GLOBAL DEFAULT    1 do_machine_check
-   142: ffff80000010c0f0     0 NOTYPE  GLOBAL DEFAULT    1 general_protection
-   143: ffff80000010a11e   757 FUNC    GLOBAL DEFAULT    1 do_segment_not_p[...]
-   144: ffff800000104f53   103 FUNC    GLOBAL DEFAULT    1 memcpy
-   145: ffff8000001047e7   140 FUNC    GLOBAL DEFAULT    1 draw_text
-   146: ffff800000109550    31 FUNC    GLOBAL DEFAULT    1 interrupt_init
-   147: ffff80000010419e   123 FUNC    GLOBAL DEFAULT    1 init_boot_info
-   148: ffff80000010963f    31 FUNC    GLOBAL DEFAULT    1 exception_handle
-   149: ffff800000104219   125 FUNC    GLOBAL DEFAULT    1 draw_pixel
-   150: ffff800000104296   277 FUNC    GLOBAL DEFAULT    1 draw_straight_line
-   151: ffff80000010c04d     0 NOTYPE  GLOBAL DEFAULT    1 overflow
-   152: ffff80000010bfe4     0 NOTYPE  GLOBAL DEFAULT    1 debug
-   153: ffff80000010c060     0 NOTYPE  GLOBAL DEFAULT    1 bounds
-   154: ffff80000010c0bd     0 NOTYPE  GLOBAL DEFAULT    1 invalid_TSS
-   155: ffff8000001102ec     4 OBJECT  GLOBAL DEFAULT    7 g_mouse_y
-   156: ffff80000010a708   757 FUNC    GLOBAL DEFAULT    1 do_general_protection
-   157: ffff80000010998a   169 FUNC    GLOBAL DEFAULT    1 do_int3
-   158: ffff800000112360     0 NOTYPE  GLOBAL DEFAULT    7 _ebss
-   159: ffff8000001051b4    95 FUNC    GLOBAL DEFAULT    1 strrchr
-   160: ffff80000010c0ce     0 NOTYPE  GLOBAL DEFAULT    1 segment_not_present
-   161: ffff800000104000    71 FUNC    GLOBAL DEFAULT    1 kernel_main
-   162: ffff80000010c0df     0 NOTYPE  GLOBAL DEFAULT    1 stack_segment_fault
-   163: ffff800000104873   287 FUNC    GLOBAL DEFAULT    1 draw_printf
-   164: ffff80000010f570     0 NOTYPE  GLOBAL DEFAULT    5 _rodata
-   165: ffff80000010d312     0 NOTYPE  GLOBAL DEFAULT    2 IDT_Table
-   166: ffff800000105213   112 FUNC    GLOBAL DEFAULT    1 strcat
-   167: ffff80000010a413   757 FUNC    GLOBAL DEFAULT    1 do_stack_segment[...]
-   168: ffff80000010978f   169 FUNC    GLOBAL DEFAULT    1 do_divide_error
-   169: ffff80000010b041   169 FUNC    GLOBAL DEFAULT    1 do_virtualizatio[...]
-   170: ffff8000001098e1   169 FUNC    GLOBAL DEFAULT    1 do_nmi
-   171: ffff8000001049f7    31 FUNC    GLOBAL DEFAULT    1 draw_test
-   172: ffff8000001102e0     0 NOTYPE  GLOBAL DEFAULT    7 _bss
-   173: ffff800000109c2e   169 FUNC    GLOBAL DEFAULT    1 do_dev_not_available
-   174: ffff800000105550     0 NOTYPE  GLOBAL DEFAULT    1 _start
-   175: ffff80000010c073     0 NOTYPE  GLOBAL DEFAULT    1 undefined_opcode
-   176: ffff800000109838   169 FUNC    GLOBAL DEFAULT    1 do_debug
-   177: ffff80000010ae46   169 FUNC    GLOBAL DEFAULT    1 do_alignment_check
-   178: ffff800000104a16    85 FUNC    GLOBAL DEFAULT    1 memsetl
-   179: ffff80000010e31c     0 NOTYPE  GLOBAL DEFAULT    2 TSS64_Table
-   180: ffff800000104fba   137 FUNC    GLOBAL DEFAULT    1 memcmp
-   181: ffff800000100000     0 NOTYPE  GLOBAL DEFAULT    1 _text
-   182: ffff80000010c180  4096 OBJECT  GLOBAL DEFAULT    2 g_font_ascii
-   183: ffff800000104992   101 FUNC    GLOBAL DEFAULT    1 init_draw
-   184: ffff80000010c125     0 NOTYPE  GLOBAL DEFAULT    1 alignment_check
-   185: ffff800000104efe    85 FUNC    GLOBAL DEFAULT    1 memset
-   186: ffff80000010c112     0 NOTYPE  GLOBAL DEFAULT    1 x87_FPU_error
-   187: ffff80000010c099     0 NOTYPE  GLOBAL DEFAULT    1 double_fault
-   188: ffff8000001102e0     8 OBJECT  GLOBAL DEFAULT    7 g_graphicInfo
-   189: ffff80000010af98   169 FUNC    GLOBAL DEFAULT    1 do_SIMD_exception
-   190: ffff8000001102e8     4 OBJECT  GLOBAL DEFAULT    7 g_mouse_x
-   191: ffff8000001050e3   123 FUNC    GLOBAL DEFAULT    1 strcmp
-   192: ffff80000010ad9d   169 FUNC    GLOBAL DEFAULT    1 do_x87_FPU_error
-   193: ffff800000104e27   215 FUNC    GLOBAL DEFAULT    1 sprintf
-   194: ffff800000110300    32 OBJECT  GLOBAL DEFAULT    7 g_bootInfo
-   195: ffff80000010c15c     0 NOTYPE  GLOBAL DEFAULT    1 virtualization_e[...]
-   196: ffff80000010bf8d     0 NOTYPE  GLOBAL DEFAULT    1 ret_from_intr
-   197: ffff8000001043ab   249 FUNC    GLOBAL DEFAULT    1 draw_rect
-   198: ffff80000010c180     0 NOTYPE  GLOBAL DEFAULT    2 _data
-   199: ffff80000010c0aa     0 NOTYPE  GLOBAL DEFAULT    1 coprocessor_segm[...]
-   200: ffff80000010f49c     0 NOTYPE  GLOBAL DEFAULT    2 _edata
-   201: ffff80000010c101     0 NOTYPE  GLOBAL DEFAULT    1 page_fault
-   202: ffff800000112360     0 NOTYPE  GLOBAL DEFAULT    7 _end
-   203: ffff80000010956f   177 FUNC    GLOBAL DEFAULT    1 set_idt_gate
-   204: ffff80000010c136     0 NOTYPE  GLOBAL DEFAULT    1 machine_check
-   205: ffff8000001052e4   119 FUNC    GLOBAL DEFAULT    1 init_mouse
-   206: ffff800000109d80   169 FUNC    GLOBAL DEFAULT    1 do_coprocessor_s[...]
-   207: ffff800000109a33   169 FUNC    GLOBAL DEFAULT    1 do_overflow
-   208: ffff80000010c149     0 NOTYPE  GLOBAL DEFAULT    1 SIMD_exception
-   209: ffff80000010509a    73 FUNC    GLOBAL DEFAULT    1 strlen
-   210: ffff80000010d280     0 NOTYPE  GLOBAL DEFAULT    2 GDT_Table
-   211: ffff80000010515e    86 FUNC    GLOBAL DEFAULT    1 strchr
-   212: ffff80000010bff4     0 NOTYPE  GLOBAL DEFAULT    1 nmi
-   213: ffff80000010451e   209 FUNC    GLOBAL DEFAULT    1 clear_screen
-   214: ffff8000001044a4   122 FUNC    GLOBAL DEFAULT    1 draw_solid_rect
-   215: ffff80000010965e   305 FUNC    GLOBAL DEFAULT    1 set_tss64
-   216: ffff800000109620    31 FUNC    GLOBAL DEFAULT    1 interrupt_handle
-   217: ffff80000010c086     0 NOTYPE  GLOBAL DEFAULT    1 dev_not_available
-   218: ffff80000010c03a     0 NOTYPE  GLOBAL DEFAULT    1 int3
-   219: ffff80000010fb9d     0 NOTYPE  GLOBAL DEFAULT    5 _erodata
+     6: ffff800000100078     0 NOTYPE  LOCAL  DEFAULT    1 setup_TSS64
+     7: ffff8000001000d8     0 NOTYPE  LOCAL  DEFAULT    1 go_to_kernel
+     8: ffff800000101000     0 NOTYPE  LOCAL  DEFAULT    1 __PML4E
+     9: ffff800000102000     0 NOTYPE  LOCAL  DEFAULT    1 __PDPTE
+    10: ffff800000103000     0 NOTYPE  LOCAL  DEFAULT    1 __PDE
+    11: ffff80000010d2d6     0 NOTYPE  LOCAL  DEFAULT    2 GDT_END
+    12: ffff80000010d2d6     0 NOTYPE  LOCAL  DEFAULT    2 GDT_LIMIT
+    13: ffff80000010d2d8     0 NOTYPE  LOCAL  DEFAULT    2 GDT_BASE
+    14: ffff80000010e2e0     0 NOTYPE  LOCAL  DEFAULT    2 IDT_END
+    15: ffff80000010e2e0     0 NOTYPE  LOCAL  DEFAULT    2 IDT_LIMIT
+    16: ffff80000010e2e2     0 NOTYPE  LOCAL  DEFAULT    2 IDT_BASE
+    17: ffff80000010e352     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_END
+    18: ffff80000010e352     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_POINTER
+    19: ffff80000010e352     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_LIMIT
+    20: ffff80000010e354     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_BASE
+    21: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS kernel.c
+    22: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS efi_info.c
+    23: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS draw.c
+    24: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS stdio.c
+    25: ffff800000104908   193 FUNC    LOCAL  DEFAULT    1 itoa
+    26: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS string.c
+    27: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS mouse.c
+    28: ffff8000001052d1   180 FUNC    LOCAL  DEFAULT    1 mouse_handler
+    29: ffff80000010bec0   256 OBJECT  LOCAL  DEFAULT    2 cursor.0
+    30: ffff80000010e558     0 NOTYPE  LOCAL  DEFAULT    6 .LC0
+    31: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS head.o
+    32: ffff80000010c048     0 NOTYPE  LOCAL  DEFAULT    2 GDT_POINTER
+    33: ffff80000010d052     0 NOTYPE  LOCAL  DEFAULT    2 IDT_POINTER
+    34: ffff800000105673     0 NOTYPE  LOCAL  DEFAULT    1 switch_seg
+    35: ffff80000010567b     0 NOTYPE  LOCAL  DEFAULT    1 entry64
+    36: ffff800000105698     0 NOTYPE  LOCAL  DEFAULT    1 setup_TSS64
+    37: ffff8000001056f8     0 NOTYPE  LOCAL  DEFAULT    1 go_to_kernel
+    38: ffff800000106620     0 NOTYPE  LOCAL  DEFAULT    1 __PML4E
+    39: ffff800000107620     0 NOTYPE  LOCAL  DEFAULT    1 __PDPTE
+    40: ffff800000108620     0 NOTYPE  LOCAL  DEFAULT    1 __PDE
+    41: ffff80000010c048     0 NOTYPE  LOCAL  DEFAULT    2 GDT_END
+    42: ffff80000010c048     0 NOTYPE  LOCAL  DEFAULT    2 GDT_LIMIT
+    43: ffff80000010c04a     0 NOTYPE  LOCAL  DEFAULT    2 GDT_BASE
+    44: ffff80000010d052     0 NOTYPE  LOCAL  DEFAULT    2 IDT_END
+    45: ffff80000010d052     0 NOTYPE  LOCAL  DEFAULT    2 IDT_LIMIT
+    46: ffff80000010d054     0 NOTYPE  LOCAL  DEFAULT    2 IDT_BASE
+    47: ffff80000010d0c4     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_END
+    48: ffff80000010d0c4     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_POINTER
+    49: ffff80000010d0c4     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_LIMIT
+    50: ffff80000010d0c6     0 NOTYPE  LOCAL  DEFAULT    2 TSS64_BASE
+    51: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS interrupt.c
+    52: ffff80000010e573     0 NOTYPE  LOCAL  DEFAULT    6 .LC0
+    53: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS interrupt_entry.o
+    54: ffff800000109a32     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_exit
+    55: ffff800000109a57     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x00
+    56: ffff800000109aa2     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x01
+    57: ffff800000109af0     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x02
+    58: ffff800000109b3e     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x03
+    59: ffff800000109b8c     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x04
+    60: ffff800000109bda     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x05
+    61: ffff800000109c28     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x06
+    62: ffff800000109c76     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x07
+    63: ffff800000109cc4     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x08
+    64: ffff800000109d10     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x09
+    65: ffff800000109d5e     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x0a
+    66: ffff800000109daa     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x0b
+    67: ffff800000109df6     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x0c
+    68: ffff800000109e42     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x0d
+    69: ffff800000109e8e     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x0e
+    70: ffff800000109eda     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x0f
+    71: ffff800000109f28     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x10
+    72: ffff800000109f76     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x11
+    73: ffff800000109fc2     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x12
+    74: ffff80000010a010     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x13
+    75: ffff80000010a05e     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x14
+    76: ffff80000010a0ac     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x15
+    77: ffff80000010a0f8     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x16
+    78: ffff80000010a146     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x17
+    79: ffff80000010a194     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x18
+    80: ffff80000010a1e2     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x19
+    81: ffff80000010a230     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x1a
+    82: ffff80000010a27e     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x1b
+    83: ffff80000010a2cc     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x1c
+    84: ffff80000010a31a     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x1d
+    85: ffff80000010a368     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x1e
+    86: ffff80000010a3b6     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x1f
+    87: ffff80000010a404     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x20
+    88: ffff80000010a452     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x21
+    89: ffff80000010a4a0     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x22
+    90: ffff80000010a4ee     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x23
+    91: ffff80000010a53c     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x24
+    92: ffff80000010a58a     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x25
+    93: ffff80000010a5d8     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x26
+    94: ffff80000010a626     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x27
+    95: ffff80000010a674     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x28
+    96: ffff80000010a6c2     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x29
+    97: ffff80000010a710     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x2a
+    98: ffff80000010a75e     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x2b
+    99: ffff80000010a7ac     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x2c
+   100: ffff80000010a7fa     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x2d
+   101: ffff80000010a848     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x2e
+   102: ffff80000010a896     0 NOTYPE  LOCAL  DEFAULT    1 interrupt_entry_0x2f
+   103: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS tss.c
+   104: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS init.c
+   105: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS exception.c
+   106: ffff80000010e3a0   176 OBJECT  LOCAL  DEFAULT    5 messages
+   107: ffff80000010e800     0 NOTYPE  LOCAL  DEFAULT    6 .LC22
+   108: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS keyboard.c
+   109: ffff80000010ac24   180 FUNC    LOCAL  DEFAULT    1 keyboard_handler
+   110: ffff80000010e827     0 NOTYPE  LOCAL  DEFAULT    6 .LC0
+   111: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS 8259A.c
+   112: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS 
+   113: ffff80000010e388     0 OBJECT  LOCAL  DEFAULT    4 _GLOBAL_OFFSET_TABLE_
+   114: ffff80000010ae60    96 FUNC    GLOBAL DEFAULT    1 send_eoi
+   115: ffff800000105030    87 FUNC    GLOBAL DEFAULT    1 strcpy
+   116: ffff80000010eec0  4096 OBJECT  GLOBAL DEFAULT    8 g_buffer
+   117: ffff80000010448c   504 FUNC    GLOBAL DEFAULT    1 draw_font_ascii
+   118: ffff8000001049c9  1099 FUNC    GLOBAL DEFAULT    1 vsprintf
+   119: ffff8000001096ae    62 FUNC    GLOBAL DEFAULT    1 set_interrupt_handler
+   120: ffff80000010542a   495 FUNC    GLOBAL DEFAULT    1 draw_mouse
+   121: ffff800000105270    97 FUNC    GLOBAL DEFAULT    1 strchrs
+   122: ffff80000010aec0     0 NOTYPE  GLOBAL DEFAULT    1 _etext
+   123: ffff80000010a8e4   166 FUNC    GLOBAL DEFAULT    1 tss_init
+   124: ffff800000104f40   103 FUNC    GLOBAL DEFAULT    1 memcpy
+   125: ffff80000010acd8    81 FUNC    GLOBAL DEFAULT    1 keyboard_init
+   126: ffff800000104684   140 FUNC    GLOBAL DEFAULT    1 draw_text
+   127: ffff8000001096ec   298 FUNC    GLOBAL DEFAULT    1 interrupt_init
+   128: ffff80000010403b   123 FUNC    GLOBAL DEFAULT    1 init_boot_info
+   129: ffff8000001040b6   125 FUNC    GLOBAL DEFAULT    1 draw_pixel
+   130: ffff800000104133   277 FUNC    GLOBAL DEFAULT    1 draw_straight_line
+   131: ffff8000001098ca    68 FUNC    GLOBAL DEFAULT    1 register_handler
+   132: ffff800000109816   180 FUNC    GLOBAL DEFAULT    1 default_handler
+   133: ffff800000110ec4     4 OBJECT  GLOBAL DEFAULT    8 g_mouse_y
+   134: ffff800000110f00  2048 OBJECT  GLOBAL DEFAULT    8 handler_table
+   135: ffff800000111720     0 NOTYPE  GLOBAL DEFAULT    8 _ebss
+   136: ffff8000001051a1    95 FUNC    GLOBAL DEFAULT    1 strrchr
+   137: ffff800000104000    59 FUNC    GLOBAL DEFAULT    1 kernel_main
+   138: ffff800000104710   287 FUNC    GLOBAL DEFAULT    1 draw_printf
+   139: ffff80000010e450     0 NOTYPE  GLOBAL DEFAULT    6 _rodata
+   140: ffff80000010c052     0 NOTYPE  GLOBAL DEFAULT    2 IDT_Table
+   141: ffff800000105200   112 FUNC    GLOBAL DEFAULT    1 strcat
+   142: ffff800000104894    31 FUNC    GLOBAL DEFAULT    1 draw_test
+   143: ffff800000109945    78 FUNC    GLOBAL DEFAULT    1 intr_enable
+   144: ffff80000010aabb   175 FUNC    GLOBAL DEFAULT    1 kernel_init
+   145: ffff80000010ee80     0 NOTYPE  GLOBAL DEFAULT    8 _bss
+   146: ffff800000105620     0 NOTYPE  GLOBAL DEFAULT    1 _start
+   147: ffff80000010d0ce     0 NOTYPE  GLOBAL DEFAULT    2 handler_entry_table
+   148: ffff800000109993    78 FUNC    GLOBAL DEFAULT    1 intr_disable
+   149: ffff8000001048b3    85 FUNC    GLOBAL DEFAULT    1 memsetl
+   150: ffff80000010d05c     0 NOTYPE  GLOBAL DEFAULT    2 TSS64_Table
+   151: ffff800000104fa7   137 FUNC    GLOBAL DEFAULT    1 memcmp
+   152: ffff800000100000     0 NOTYPE  GLOBAL DEFAULT    1 _text
+   153: ffff80000010aec0  4096 OBJECT  GLOBAL DEFAULT    2 g_font_ascii
+   154: ffff80000010990e    55 FUNC    GLOBAL DEFAULT    1 intr_get_status
+   155: ffff80000010482f   101 FUNC    GLOBAL DEFAULT    1 init_draw
+   156: ffff800000104eeb    85 FUNC    GLOBAL DEFAULT    1 memset
+   157: ffff80000010eea0     8 OBJECT  GLOBAL DEFAULT    8 g_graphicInfo
+   158: ffff800000110ec0     4 OBJECT  GLOBAL DEFAULT    8 g_mouse_x
+   159: ffff8000001050d0   123 FUNC    GLOBAL DEFAULT    1 strcmp
+   160: ffff800000104e14   215 FUNC    GLOBAL DEFAULT    1 sprintf
+   161: ffff80000010ee80    32 OBJECT  GLOBAL DEFAULT    8 g_bootInfo
+   162: ffff80000010ad29   311 FUNC    GLOBAL DEFAULT    1 pic_init
+   163: ffff800000104248   249 FUNC    GLOBAL DEFAULT    1 draw_rect
+   164: ffff80000010aec0     0 NOTYPE  GLOBAL DEFAULT    2 _data
+   165: ffff8000001099e1    81 FUNC    GLOBAL DEFAULT    1 intr_set_status
+   166: ffff80000010e35c     0 NOTYPE  GLOBAL DEFAULT    2 _edata
+   167: ffff800000111720     0 NOTYPE  GLOBAL DEFAULT    8 _end
+   168: ffff800000109620   142 FUNC    GLOBAL DEFAULT    1 set_idt_gate
+   169: ffff800000105385   165 FUNC    GLOBAL DEFAULT    1 mouse_init
+   170: ffff800000105087    73 FUNC    GLOBAL DEFAULT    1 strlen
+   171: ffff80000010bfc0     0 NOTYPE  GLOBAL DEFAULT    2 GDT_Table
+   172: ffff80000010514b    86 FUNC    GLOBAL DEFAULT    1 strchr
+   173: ffff8000001043bb   209 FUNC    GLOBAL DEFAULT    1 clear_screen
+   174: ffff800000104341   122 FUNC    GLOBAL DEFAULT    1 draw_solid_rect
+   175: ffff80000010a98a   305 FUNC    GLOBAL DEFAULT    1 set_tss64
+   176: ffff80000010ab6a   186 FUNC    GLOBAL DEFAULT    1 exception_handler
+   177: ffff80000010e845     0 NOTYPE  GLOBAL DEFAULT    6 _erodata
 
 No version information found in this file.
