@@ -29,7 +29,7 @@ GraphicInfo* g_graphicInfo;
 
 #define COLOR_BLACK (Color){0,0,0,0}
 #define COLOR_RED (Color){0,0,255,0}
-
+#define COLOR_WHITE (Color){255,255,255,0}
 
 void draw_pixel(uint32_t x,uint32_t y,Color color);
 

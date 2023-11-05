@@ -2,6 +2,9 @@
 ## 64位 linux 调用约定
 参数按照从左向右的顺序依次是RDI、RSI、RDX、RCX、R8、R9，剩余参数使用内存传递方式，RAX放置函数的返回值，调用者负责平衡栈。
 
+
+//https://wiki.osdev.org/%228042%22_PS/2_Controller
+
 INTERRUPT_HANDLER 0x00, 0; divide by zero
 INTERRUPT_HANDLER 0x01, 0; debug
 INTERRUPT_HANDLER 0x02, 0; non maskable interrupt

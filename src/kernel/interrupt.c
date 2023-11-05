@@ -42,9 +42,9 @@ void interrupt_init()
 
 void default_handler(uint64_t rsp, uint64_t int_id)
 {
-   uint64_t * p = NULL;
-   p = ( uint64_t *)(rsp + 0x90);
-   draw_printf(0,0,COLOR_RED,"Default_Handler:int_id:%X",int_id);
+   // uint64_t * p = NULL;
+   // p = ( uint64_t *)(rsp + 0x90);
+   // draw_printf(0,0,COLOR_RED,"Default_Handler:int_id:%X",int_id);
    send_eoi(int_id);
 }
 void register_handler(uint8_t idx, void* function)

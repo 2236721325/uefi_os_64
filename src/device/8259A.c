@@ -33,8 +33,5 @@ void send_eoi(uint64_t idx)
     {
         io_out8(PIC_SLAVE_COMMAND, PIC_EOI); // 在中断处理之后向8259A发送EOI通知它中断处理结束
     }
-    else
-    {
-        io_out8(PIC_MASTER_COMMAND, PIC_EOI); // 在中断处理之后向8259A发送EOI通知它中断处理结束
-    }
+    io_out8(PIC_MASTER_COMMAND, PIC_EOI); // 在中断处理之后向8259A发送EOI通知它中断处理结束
 }

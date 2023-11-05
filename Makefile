@@ -40,6 +40,12 @@ $(BUILD)/kernel/system.o: $(BUILD)/kernel/kernel.o \
 						  $(BUILD)/kernel/exception.o \
 						  $(BUILD)/device/keyboard.o \
 						  $(BUILD)/device/8259A.o \
+						  $(BUILD)/lib/ioqueue.o \
+						  $(BUILD)/kernel/memory.o \
+						  $(BUILD)/lib/bitmap.o \
+	  
+
+
 
 
 

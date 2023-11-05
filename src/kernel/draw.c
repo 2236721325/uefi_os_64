@@ -2,7 +2,7 @@
 #include "os/kernel/draw.h"
 #include "os/kernel/font.h"
 #include "os/kernel/stdio.h"
-
+#include "os/kernel/string.h"
 #include <stdarg.h>
 
 void draw_pixel(uint32_t x, uint32_t y, Color color)
@@ -126,6 +126,7 @@ void draw_text(uint32_t x, uint32_t y,Color color, uint8_t *str)
 
 uint32_t draw_printf(uint32_t x, uint32_t y, Color color, const uint8_t *fmt, ...)
 {
+    memsetl(g_buffer,0,512);
     va_list args;
     va_start(args, fmt); // 使args指向format
     uint32_t len=vsprintf(g_buffer, fmt, args);

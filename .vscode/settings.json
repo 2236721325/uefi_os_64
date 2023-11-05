@@ -14,6 +14,10 @@
         "exception.h": "c",
         "io.h": "c",
         "global.h": "c",
-        "system_error": "c"
+        "ioqueue.h": "c",
+        "init.h": "c",
+        "bitmap.h": "c",
+        "memory.h": "c"
+
     }
 }

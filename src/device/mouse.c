@@ -5,19 +5,41 @@
 #include "os/kernel/interrupt.h"
 #include "os/kernel/io.h"
 #include "os/device/8259A.h"
+#include "os/device/keyboard.h"
+
+
+
+
+
 static void mouse_handler(uint64_t rsp,uint64_t int_id)
 {
 
-	uint64_t * p = NULL;
-    p = ( uint64_t *)(rsp + 0x90);
-    draw_printf(0,64,COLOR_RED,"Mouse:Error_code------->%x",int_id);
 
+	uint8_t data=io_in8(PS2_DATA_PORT);
+	if(!ioqueue_full(&g_mousequeue))
+    {
+        ioqueue_put(&g_mousequeue,data);
+    }
     send_eoi(int_id);
 	return ;
 }
+
+#define KEYCMD_SENDTO_MOUSE		0xd4
+#define MOUSECMD_ENABLE			0xf4
+static void enable_mouse(void)
+{
+	/* 激活鼠标 */
+	wait_KBC_sendready();
+	io_out8(PS2_CMD_PORT, KEYCMD_SENDTO_MOUSE);
+	wait_KBC_sendready();
+	io_out8(PS2_DATA_PORT, MOUSECMD_ENABLE);
+	return;
+}
 void mouse_init()
 {
+	ioqueue_init(&g_mousequeue,g_mousebuf,MOUSEBUFFER_SIZE);
 	register_handler(0x2c,mouse_handler);
+	enable_mouse();
     g_mouse_x=g_graphicInfo->HorizontalResolution/2;
     g_mouse_y= g_graphicInfo->VerticalResolution/2;
     draw_mouse();

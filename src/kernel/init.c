@@ -7,6 +7,7 @@
 #include "os/kernel/efi_info.h"
 #include "os/device/8259A.h"
 #include "os/device/keyboard.h"
+#include "os/kernel/memory.h"
 
 void kernel_init()
 {
@@ -14,7 +15,9 @@ void kernel_init()
     tss_init();
     interrupt_init();
     init_draw();
-    mouse_init();
+    memory_init();
     keyboard_init();
+    mouse_init();
+
     
 }
