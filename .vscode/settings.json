@@ -17,7 +17,8 @@
         "ioqueue.h": "c",
         "init.h": "c",
         "bitmap.h": "c",
-        "memory.h": "c"
-
+        "memory.h": "c",
+        "debug.h": "c",
+        "string_view": "c"
     }
 }

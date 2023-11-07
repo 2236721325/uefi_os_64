@@ -43,6 +43,8 @@ $(BUILD)/kernel/system.o: $(BUILD)/kernel/kernel.o \
 						  $(BUILD)/lib/ioqueue.o \
 						  $(BUILD)/kernel/memory.o \
 						  $(BUILD)/lib/bitmap.o \
+						  $(BUILD)/kernel/debug.o \
+
 	  
 
 

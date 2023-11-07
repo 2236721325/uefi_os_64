@@ -1,9 +1,16 @@
 #include "os/lib/bitmap.h"
 #include "os/kernel/string.h"
+#include "os/kernel/debug.h"
 
 void bitmap_init(Bitmap *bitmap)
 {
+    ASSERT(bitmap->bytes_len>0);
     memset(bitmap->bits, 0, bitmap->bytes_len);
+    for (uint32_t i = 0; i < (8-bitmap->last_byte_space); i++)
+    {
+        bitmap_set(bitmap,bitmap->last_byte_space+i,1);
+    }
+    
 }
 //用来确定位图的某一位是1，还是0。若是1，返回真（返回的值不一定是1）。否则，返回0。传入两个参数，指向位图的指针，与要判断的位的偏移
 bool bitmap_scan_test(Bitmap *bitmap, uint32_t bit_idx)

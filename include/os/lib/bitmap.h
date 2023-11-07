@@ -6,6 +6,7 @@
 typedef struct
 {
     uint32_t bytes_len;
+    uint32_t last_byte_space;
     uint8_t* bits;
 }Bitmap;
 

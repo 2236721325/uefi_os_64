@@ -11,6 +11,8 @@ typedef unsigned long uint64_t;
 #define bool int
 #define true 1
 #define false 0
-#define ASSERT(CONDITION) ((void)0)
+
+
+
 
 

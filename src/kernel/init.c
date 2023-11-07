@@ -18,6 +18,4 @@ void kernel_init()
     memory_init();
     keyboard_init();
     mouse_init();
-
-    
 }

@@ -43,7 +43,6 @@ _start:
 
 switch_seg:
 	.quad	entry64
-
 entry64:
 	movq	$0x10,	%rax
 	movq	%rax,	%ds
@@ -209,17 +208,7 @@ __PDE:
 	.quad	0x000087	
 	.quad	0x200087
 	.quad	0x400087
-	.quad	0x600087
-	.quad	0x800087
-	.quad	0xa00087		/*0x a00000*/
-	.quad	0xc00087
-	.quad	0xe00087
-	.quad	0x1000087
-	.quad	0x1200087		/*0x1000000*/
-	.quad	0x1400087
-	.quad	0x1600087
-	.quad	0x1800087
-	.fill	499,8,0
+	.fill	509,8,0
 
 //=======	GDT_Table
 
