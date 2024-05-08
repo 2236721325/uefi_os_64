@@ -1,46 +1,39 @@
 #pragma once
-#include "os/kernel/efi_info.h"
+#include "os/kernel/boot_info.h"
 #include "os/kernel/types.h"
 
+// 128TB
+#define VGA_TEMP_VIRTUAL_ADDRESS 0xffff800003000000L
 
-
-typedef struct 
-{
+struct Color {
     uint8_t Blue;
     uint8_t Green;
     uint8_t Red;
     uint8_t Reserved;
-}Color;
+};
 
-
-
-typedef struct
-{
+struct Rect {
     uint32_t X;
     uint32_t Y;
     uint32_t Width;
     uint32_t Height;
-}Rect;
+};
 
+struct graphic_info graphicInfo_g;
 
+#define COLOR_BLACK \
+    (struct Color) { 0, 0, 0, 0 }
+#define COLOR_RED \
+    (struct Color) { 0, 0, 255, 0 }
+#define COLOR_WHITE \
+    (struct Color) { 255, 255, 255, 0 }
 
-GraphicInfo* g_graphicInfo;
+void draw_pixel(uint32_t x, uint32_t y, struct Color color);
+void draw_rect(struct Rect rect, struct Color color);
+void draw_straight_line(uint32_t x, uint32_t y, uint32_t len, struct Color color);
+void draw_solid_rect(struct Rect rect, struct Color color);
+void draw_font_ascii(uint32_t x, uint32_t y, struct Color color, uint8_t c);
+uint32_t draw_printf(uint32_t x, uint32_t y, struct Color color, const uint8_t *fmt, ...);
+void draw_text(uint32_t x, uint32_t y, struct Color color, uint8_t *str);
 
-
-#define COLOR_BLACK (Color){0,0,0,0}
-#define COLOR_RED (Color){0,0,255,0}
-#define COLOR_WHITE (Color){255,255,255,0}
-
-void draw_pixel(uint32_t x,uint32_t y,Color color);
-
-
-void draw_rect(Rect rect,Color color);
-void draw_straight_line(uint32_t x, uint32_t y,uint32_t len,Color color);
-void draw_solid_rect(Rect rect, Color color);
-void draw_font_ascii(uint32_t x,uint32_t y,Color color,uint8_t c);
-uint32_t draw_printf(uint32_t x, uint32_t y, Color color, const uint8_t *fmt, ...);
-void draw_text(uint32_t x, uint32_t y,Color color, uint8_t *str);
-
-
-void init_draw();
-void draw_test();
+void draw_init();

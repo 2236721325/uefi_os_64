@@ -209,7 +209,6 @@ __PDE:
 	.quad	0x200087
 	.quad	0x400087
 	.fill	509,8,0
-
 //=======	GDT_Table
 
 .section .data

@@ -32,8 +32,6 @@ interrupt_entry_\idx:
     movq	%rax,	%ds
     movq	%rax,	%es
 
-
-
     movq $\idx,%rax
     leaq handler_table(%rip), %rbx
     //fuction args
@@ -42,10 +40,7 @@ interrupt_entry_\idx:
 
     call *(%rbx,%rax,8)
     jmp interrupt_exit
-
-
 .endm
-
 interrupt_exit:
     popq	%rax
     movq	%rax,	%ds

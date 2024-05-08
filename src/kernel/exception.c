@@ -25,16 +25,14 @@ static char *messages[] = {
     "#CP Control Protection Exception\0",
 };
 
-void exception_handler(uint64_t rsp,uint64_t error_code)
+void exception_handler(uint64_t rsp, uint64_t error_code)
 {
 
-	uint64_t * p = NULL;
-    p = ( uint64_t *)(rsp + 0x90);
-    draw_printf(0,0,COLOR_RED,"error_code:%X,exception_name:%s,rip:%X",error_code,messages[error_code],*p);
+    uint64_t *p = NULL;
+    p = (uint64_t *)(rsp + 0x90);
+    draw_printf(0, 0, COLOR_RED, "error_code:%X,exception_name:%s,rip:%X", error_code, messages[error_code], *p);
 
-    while (1)
-    {
+    while (1) {
         /* code */
     }
-    
 }

@@ -1,8 +1,8 @@
 #include "os/lib/bitmap.h"
-#include "os/kernel/string.h"
+#include "os/lib/string.h"
 #include "os/kernel/debug.h"
 
-void bitmap_init(Bitmap *bitmap)
+void bitmap_init(struct Bitmap *bitmap)
 {
     ASSERT(bitmap->bytes_len>0);
     memset(bitmap->bits, 0, bitmap->bytes_len);
@@ -13,14 +13,14 @@ void bitmap_init(Bitmap *bitmap)
     
 }
 //用来确定位图的某一位是1，还是0。若是1，返回真（返回的值不一定是1）。否则，返回0。传入两个参数，指向位图的指针，与要判断的位的偏移
-bool bitmap_scan_test(Bitmap *bitmap, uint32_t bit_idx)
+bool bitmap_scan_test(struct Bitmap *bitmap, uint32_t bit_idx)
 {
     uint32_t byte_idx = bit_idx / 8; // 确定要判断的位所在字节的偏移
     uint32_t bit_offset = bit_idx % 8;  // 确定要判断的位在某个字节中的偏移
     return (bitmap->bits[byte_idx] & (1 << bit_offset));
 }
 
-void bitmap_set(Bitmap* bitmap,uint32_t bit_idx,int8_t value)
+void bitmap_set(struct Bitmap* bitmap,uint32_t bit_idx,int8_t value)
 {
    ASSERT((value == 0) || (value == 1));
    uint32_t byte_idx = bit_idx / 8;    //确定要设置的位所在字节的偏移
@@ -39,7 +39,7 @@ void bitmap_set(Bitmap* bitmap,uint32_t bit_idx,int8_t value)
 
 //用来在位图中找到cnt个连续的0，以此来分配一块连续未被占用的内存，参数有指向位图的指针与要分配的内存块的个数cnt
 //成功就返回起始位的偏移（如果把位图看做一个数组，那么也可以叫做下标），不成功就返回-1
-int bitmap_scan(Bitmap* bitmap, uint32_t cnt){
+int bitmap_scan(struct Bitmap* bitmap, uint32_t cnt){
     uint32_t area_start = 0, area_size = 0;    //用来存储一个连续为0区域的起始位置, 存储一个连续为0的区域大小
     while(1){                   
         while( bitmap_scan_test(bitmap, area_start) && area_start / 8 < bitmap->bytes_len) //当这个while顺利结束1、area_start就是第一个0的位置；2、area_start已经越过位图边界

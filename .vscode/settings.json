@@ -19,6 +19,16 @@
         "bitmap.h": "c",
         "memory.h": "c",
         "debug.h": "c",
-        "string_view": "c"
+        "string_view": "c",
+        "keyboard.h": "c",
+        "algorithm": "c",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "streambuf": "cpp",
+        "*.tcc": "cpp",
+        "font.h": "c",
+        "sstream": "c",
+        "8259a.h": "c",
+        "boot_info.h": "c"
     }
 }
