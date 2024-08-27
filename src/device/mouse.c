@@ -1,5 +1,5 @@
 #include "os/device/mouse.h"
-#include "os/kernel/bootInfo.h"
+#include "os/kernel/boot_info.h"
 #include "os/kernel/types.h"
 #include "os/kernel/draw.h"
 #include "os/kernel/interrupt.h"

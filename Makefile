@@ -60,9 +60,6 @@ $(BUILD)/kernel/system.bin: $(BUILD)/kernel/system.o
 .PHONY:clean
 clean:
 	rm -rf $(BUILD)/kernel
-.PHONY:test
-test: clean $(BUILD)/kernel/system.bin
-	cp /media/wyh/KESU/Coding/build_os/uefi_os/build/kernel/system.bin /media/wyh/KESU/Coding/build_os/edk2/run-ovmf/esp/
 
 .PHONY:qemu
 qemu:clean $(BUILD)/kernel/system.bin
@@ -70,12 +67,13 @@ qemu:clean $(BUILD)/kernel/system.bin
 	@cp $(BUILD)/bootloader/DEBUG_GCC5/X64/BootLoader.efi $(ENV)/run-ovmf/esp/EFI/Boot/BootX64.efi
 	@cp $(BUILD)/kernel/system.bin $(ENV)/run-ovmf/esp/
 	@qemu-system-x86_64 -m 4096 \
-	-S -s \
+	-s -S \
 	-boot c \
 	-drive if=pflash,format=raw,file=$(ENV)/run-ovmf/OVMF_CODE.fd,readonly=on \
 	-drive if=pflash,format=raw,file=$(ENV)/run-ovmf/OVMF_VARS.fd,readonly=on \
 	-drive format=raw,file=fat:rw:$(ENV)/run-ovmf/esp \
-	-net none
+	-net none \
+	-vnc 172.28.47.230:0,to=99,id=default  \
 
 
 	

@@ -30,5 +30,9 @@
         "sstream": "c",
         "8259a.h": "c",
         "boot_info.h": "c"
+    },
+    "files.exclude": {
+        "": true,
+        "**/.git": false
     }
 }

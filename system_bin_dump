@@ -1,5 +1,5 @@
 
-build/kernel/system.bin：     文件格式 binary
+build/kernel/system.bin:     file format binary
 
 
 Disassembly of section .data:
