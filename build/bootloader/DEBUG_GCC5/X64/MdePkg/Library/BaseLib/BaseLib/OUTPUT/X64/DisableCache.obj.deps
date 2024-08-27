@@ -1,7 +1,0 @@
-/media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/X64/DisableCache.obj:  /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Library/BaseLib/X64/DisableCache.nasm \
- /media/wyh/KESU/Coding/build_os/uefi_os/build/bootloader/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h \
- /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Base.h \
- /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/X64/ProcessorBind.h \
- /media/wyh/KESU/Coding/build_os/edk2/edk2/MdePkg/Include/Library/PcdLib.h
-
-# Updated 
